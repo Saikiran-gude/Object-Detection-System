@@ -1,1 +1,8 @@
-# Object-Detection-System
+# Object-Detection
+This project implements real-time object detection using Faster R-CNN and YOLOv5 in Google Colab. It captures an image using the webcam, processes it through a deep learning model, and detects objects with bounding boxes and confidence scores. The process begins by installing necessary dependencies such as `torch`, `torchvision`, `cython`, and `cocoapi` for dataset handling. The YOLOv5 repository is also cloned and set up with its required dependencies.  
+
+The image is captured using JavaScript integrated with Google Colab’s webcam functionality, which allows real-time image acquisition. Once captured, the image is converted into a format compatible with deep learning models. The preprocessing step includes loading the image, converting it into a tensor, and normalizing it for compatibility with Faster R-CNN or YOLOv5. The preprocessed image is then passed through a pre-trained object detection model, where Non-Maximum Suppression (NMS) is applied to filter redundant bounding boxes.  
+
+Once the objects are detected, bounding boxes and confidence scores are extracted. Using OpenCV, these bounding boxes are drawn on the image along with their respective labels. Finally, the annotated image is displayed using `cv2_imshow()`, showcasing the detected objects.  
+
+The project utilizes **Python, PyTorch, Torchvision, YOLOv5, Faster R-CNN, OpenCV, PIL, Google Colab, and JavaScript for implementation. The expected output includes the processed image with detected objects highlighted by bounding boxes and labels, enabling real-time object detection through deep learning models.
